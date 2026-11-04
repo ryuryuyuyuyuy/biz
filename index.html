@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>류연성 | 프로필 페이지</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-sub: #64748b;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 24px;
+            border: 1px solid var(--border-color);
+        }
+
+        .profile-title h1 {
+            font-size: 2rem;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .profile-title p {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 24px;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            color: var(--text-main);
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 12px;
+        }
+
+        .info-card {
+            background-color: #f1f5f9;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .info-card h3 {
+            font-size: 0.9rem;
+            color: var(--text-sub);
+            margin-bottom: 4px;
+        }
+
+        .info-card p {
+            font-weight: 600;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .tag-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag {
+            background-color: #e0e7ff;
+            color: #3730a3;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-sub);
+            font-size: 0.875rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 메인 헤더 영역 -->
+        <header>
+            <div class="profile-title">
+                <h1>류연성 (Ryu Yeon Seong)</h1>
+                <p>경영정보학과 (Management Information Systems)</p>
+            </div>
+        </header>
+
+        <!-- 기본 정보 -->
+        <section>
+            <h2>소개 (About Me)</h2>
+            <p>
+                비즈니스 문제 해결과 데이터 기반 decision-making에 흥미를 느끼며, 
+                경영학적 통찰과 IT 기술을 융합하는 데이터 전문가로 성장하고 있습니다.
+            </p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>전공</h3>
+                    <p>경영정보학과</p>
+                </div>
+                <div class="info-card">
+                    <h3>관심 분야</h3>
+                    <p>데이터 분석 & 데이터베이스</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 핵심 역량 및 연구 분야 -->
+        <section>
+            <h2>역량 및 관심 기술 (Skills & Interests)</h2>
+            <ul>
+                <li>데이터 수집 및 통계 분석 (Python, Pandas, Seaborn)</li>
+                <li>데이터베이스 구조 설계 및 SQL 활용 (SQLD, ADsP 준비)</li>
+                <li>웹 시스템 기획 및 UI/UX 인터페이스 설계</li>
+            </ul>
+            <div class="tag-group">
+                <span class="tag">#Python</span>
+                <span class="tag">#SQL</span>
+                <span class="tag">#DataAnalysis</span>
+                <span class="tag">#PowerBI</span>
+                <span class="tag">#MIS</span>
+            </div>
+        </section>
+
+        <!-- 개인적 라이프스타일 / 취미 -->
+        <section>
+            <h2>활동 및 취미 (Life & Hobbies)</h2>
+            <ul>
+                <li><strong>체력 관리:</strong> 웨이트 트레이닝을 통한 체계적인 루틴 관리 및 피트니스 기록</li>
+                <li><strong>자산 관리:</strong> ETF 투자 전략 및 시장 분석 트렌드 팔로업</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 류연성. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
